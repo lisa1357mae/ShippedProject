@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Boat:</strong>
+  <%= @job.boat_id %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @job.status %>
+</p>
+
+<p>
+  <strong>Load amount:</strong>
+  <%= @job.load_amount %>
+</p>
+
+<p>
+  <strong>Sender:</strong>
+  <%= @job.sender_id %>
+</p>
+
+<p>
+  <strong>Buyer:</strong>
+  <%= @job.buyer_id %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @job.cost %>
+</p>
+
+<p>
+  <strong>Origin:</strong>
+  <%= @job.origin %>
+</p>
+
+<p>
+  <strong>Destination:</strong>
+  <%= @job.destination %>
+</p>
+
+<%= link_to 'Edit', edit_job_path(@job) %> |
+<%= link_to 'Back', jobs_path %>

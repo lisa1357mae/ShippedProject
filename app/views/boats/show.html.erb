@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @boat.name %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @boat.size %>
+</p>
+
+<p>
+  <strong>Max load:</strong>
+  <%= @boat.max_load %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @boat.image_url %>
+</p>
+
+<p>
+  <strong>Assign jobs:</strong>
+  <%= @boat.assign_jobs %>
+</p>
+
+<%= link_to 'Edit', edit_boat_path(@boat) %> |
+<%= link_to 'Back', boats_path %>

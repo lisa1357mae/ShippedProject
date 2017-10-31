@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  boat_id: 1
+  status: MyString
+  load_amount: 1
+  sender_id: 1
+  buyer_id: 1
+  cost: 1
+  origin: MyString
+  destination: MyString
+
+two:
+  boat_id: 1
+  status: MyString
+  load_amount: 1
+  sender_id: 1
+  buyer_id: 1
+  cost: 1
+  origin: MyString
+  destination: MyString

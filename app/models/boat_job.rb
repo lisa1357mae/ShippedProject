@@ -1,0 +1,2 @@
+class BoatJob < ApplicationRecord
+end

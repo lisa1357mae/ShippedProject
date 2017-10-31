@@ -1,0 +1,27 @@
+<%= form_with(model: boat_job, local: true) do |form| %>
+  <% if boat_job.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(boat_job.errors.count, "error") %> prohibited this boat_job from being saved:</h2>
+
+      <ul>
+      <% boat_job.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :boat_id %>
+    <%= form.number_field :boat_id, id: :boat_job_boat_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :job_id %>
+    <%= form.number_field :job_id, id: :boat_job_job_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

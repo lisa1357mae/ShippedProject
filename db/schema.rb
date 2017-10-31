@@ -10,7 +10,57 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171031151923) do
+ActiveRecord::Schema.define(version: 20171031162740) do
+
+  create_table "boat_jobs", force: :cascade do |t|
+    t.integer "boat_id"
+    t.integer "job_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "boats", force: :cascade do |t|
+    t.string "name"
+    t.integer "size"
+    t.integer "max_load"
+    t.string "image_url"
+    t.integer "assign_jobs"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "companies", force: :cascade do |t|
+    t.string "username"
+    t.string "email"
+    t.string "firstname"
+    t.string "lastname"
+    t.string "password"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "customers", force: :cascade do |t|
+    t.string "firstname"
+    t.string "lastname"
+    t.string "address"
+    t.string "email"
+    t.string "contact"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "jobs", force: :cascade do |t|
+    t.integer "boat_id"
+    t.string "status"
+    t.integer "load_amount"
+    t.integer "sender_id"
+    t.integer "buyer_id"
+    t.integer "cost"
+    t.string "origin"
+    t.string "destination"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "posts", force: :cascade do |t|
     t.string "title"

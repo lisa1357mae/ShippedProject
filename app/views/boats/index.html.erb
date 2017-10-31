@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Boats</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Size</th>
+      <th>Max load</th>
+      <th>Image url</th>
+      <th>Assign jobs</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @boats.each do |boat| %>
+      <tr>
+        <td><%= boat.name %></td>
+        <td><%= boat.size %></td>
+        <td><%= boat.max_load %></td>
+        <td><%= boat.image_url %></td>
+        <td><%= boat.assign_jobs %></td>
+        <td><%= link_to 'Show', boat %></td>
+        <td><%= link_to 'Edit', edit_boat_path(boat) %></td>
+        <td><%= link_to 'Destroy', boat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Boat', new_boat_path %>
