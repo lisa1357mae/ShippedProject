@@ -25,8 +25,10 @@ ActiveRecord::Schema.define(version: 20171031162740) do
     t.integer "max_load"
     t.string "image_url"
     t.integer "assign_jobs"
+    t.integer "company_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["company_id"], name: "index_boats_on_company_id"
   end
 
   create_table "companies", force: :cascade do |t|

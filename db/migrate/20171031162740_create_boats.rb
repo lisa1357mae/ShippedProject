@@ -6,7 +6,7 @@ class CreateBoats < ActiveRecord::Migration[5.1]
       t.integer :max_load
       t.string :image_url
       t.integer :assign_jobs
-
+t.references :company
       t.timestamps
     end
   end

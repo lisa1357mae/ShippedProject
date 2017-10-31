@@ -12,11 +12,11 @@ Company.create ([{ username: 'jborbon',email: 'jorbon@live.com', firstname:'Joan
     'Mae', password: 'test'}
   ])
 
-Boat.create([{name: 'little tug tug', size: 'small', max_load: 30, image_url: nil, assign_jobs:3},
+Boat.create([{name: 'little tug tug', size: 'small', max_load: 30, image_url: nil, assign_jobs:3, company_id: 1},
 
-  {name: 'perfect storm', size: 'large', max_load: 100, image_url: nil, assign_jobs:5},
+  {name: 'perfect storm', size: 'large', max_load: 100, image_url: nil, assign_jobs:5, company_id: 2},
 
-  {name: 'voyage', size: 'medium', max_load: 75, image_url: nil, assign_jobs:2}
+  {name: 'voyage', size: 'medium', max_load: 75, image_url: nil, assign_jobs:2, company_id: 2}
   ])
 
   BoatJob.create ([
