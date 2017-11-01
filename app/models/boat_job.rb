@@ -1,6 +1,6 @@
 class BoatJob < ApplicationRecord
 
-belongs_to :jobs
+belongs_to :job
 belongs_to :boat
 
 end
