@@ -18,25 +18,25 @@
 
   <div class="field">
     <%= form.label :size %>
-    <%=form.select options_for_select([
-    ['Small', 1], ['Medium', 2],['large, 3 '] ] )%>
+    <%=form.select :size , options_for_select([
+    ['Small (500 Max)'], ['Medium (1000 Max)'],['large(2000 Max)' ]] )%>
   </div>
 
-
+<!-- 
   <div class="field">
     <%= form.label :max_load %>
-    <%= form.number_field :max_load, id: :boat_max_load %>
-  </div>
+    <%= form.text_field :max_load, id: :boat_max_load %>
+  </div> -->
 
   <div class="field">
     <%= form.label :image_url %>
     <%= form.text_field :image_url, id: :boat_image_url %>
   </div>
 
-  <div class="field">
+  <!-- <div class="field">
     <%= form.label :assign_jobs %>
     <%= form.number_field :assign_jobs, id: :boat_assign_jobs %>
-  </div>
+  </div> -->
 
   <div class="actions">
     <%= form.submit %>
