@@ -1,0 +1,35 @@
+<h1>Dashboard</h1>
+
+<div  class="dash_account">
+ <p> <% @current_user %>
+
+	
+
+
+</div>
+
+<div class="dash_boats">
+	<p>Boats in Fleet</p>
+	<% @boats.each do |boat| %>
+	<ul>
+		<li><% boat.name %></li>
+		<% end %>
+	</ul>
+
+
+
+</div>
+
+<div class="dash_jobs">
+<p>Jobs</p>
+
+	<% @jobs.each do |jobs| %>
+	<ul>
+		<li><% jobs.id %></li>
+		<li><% jobs.status %></li>
+		<% end %>
+	</ul>
+
+
+</div>
+
