@@ -22,16 +22,18 @@
 html{
 background-color: lightgray;
 }
+
 ul {
    list-style-type: none;
-   margin: 0;
-   padding: 0;
+   margin: 12;
+   padding: 50;
    overflow: hidden;
-   border: 1px solid #e7e7e7
-;
-   background-color: #f3f3f3
-;
+   border: 1px solid #e7e7e7;
+   background-color: #f3f3f3;
+
 }
+
+
 
 li {
    float: left;
@@ -46,12 +48,12 @@ li a {
 }
 
 li a:hover:not(.active) {
-   background-color: #ddd;
+   background-color: brown;
 }
 
 li a.active {
    color: white;
-   background-color: #4CAF50;
+   background-color: brown;
 }
 
 .boats_form {
@@ -85,22 +87,91 @@ padding-right: 600px;
 
 //boat page table styles
 
-#boat_style {
+#boat_style  {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
 
-#boat_style td, #boat_style th {
+#boat_style  td, #boat_style  th {
     border: 1px solid blue;
     padding: 8px;
 }
 
-#boat_style tr:nth-child(even){background-color: #f2f2f2;}
+//#boat_style tr:nth-child(even){background-color: #f2f2f2;}
 
-#boat_style tr:hover {background-color: #ddd;}
+//#boat_style tr:hover {background-color: #ddd;}
 
 #boat_style th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: brown;
+    color: white;
+}
+
+//company table styles
+
+#company_style  {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#company_style  td, #company_style  th {
+    border: 1px solid blue;
+    padding: 8px;
+}
+
+
+
+#company_style th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: brown;
+    color: white;
+}
+
+//customer table styles
+
+#customer_style  {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customer_style  td, #company_style  th {
+    border: 1px solid blue;
+    padding: 8px;
+}
+
+
+
+#customer_style th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: brown;
+    color: white;
+}
+
+//jobs table styles
+
+#jobs_style  {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#jobs_style  td, #jobs_style  th {
+    border: 1px solid blue;
+    padding: 8px;
+}
+
+
+
+#jobs_style th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
