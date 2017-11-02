@@ -18,10 +18,15 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+
 /*nav*/
-html{
-background-color: lightgray;
-}
+
+
+//html{
+//background-color: lightgray;
+//}
 
 ul {
    list-style-type: none;
@@ -79,10 +84,10 @@ li a.active {
 }
 
 
-.form-group{
-display: inline;
-padding-right: 600px;
-}
+//.form-group{
+//display: inline;
+//padding-right: 600px;
+//}
 
 
 /*//boat page table styles*/
@@ -177,4 +182,115 @@ padding-right: 600px;
     text-align: left;
     background-color: brown;
     color: white;
+}
+
+//home styles
+#home_style  {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#home_style  td, #home_style  th {
+    border: px solid blue;
+    padding: 8px;
+}
+
+
+
+#home_style th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: brown;
+    color: white;
+}
+
+//send message button on home page
+
+
+#sendMessageButton {
+
+  font-size: 100%;
+background-color: brown;
+}
+
+//dashboard page styles
+
+
+
+
+#dashboard_style  {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#dashboard_style   td, #dashboard_style   th {
+    border: 1px solid blue;
+    padding: 8px;
+}
+
+
+
+#dashboard_style   th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: brown;
+    color: white;
+}
+
+// new boat styles
+
+
+
+
+#new_boat_style {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#new_boat_style  td, #new_boat_style  th {
+    border: 1px solid blue;
+    padding: 8px;
+}
+
+
+#new_boat_style  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: brown;
+    color: white;
+}
+
+//forms for new styles
+
+.actions {
+  font-size: 25px;
+  text-align: center;
+}
+
+
+.field {
+  text-align: center;
+
+  font-size: 25px;
+  text-align: center;
+align-items: center;
+}
+
+
+.element.style {
+
+font-size: 25px;
+text-align: center;
+
+}
+
+.photo {
+  align-items: center;
+  text-align: center;
 }

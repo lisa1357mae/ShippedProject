@@ -1,36 +1,45 @@
-<h1>Dashboard</h1>
 
-<div  class="dash_account">
- <p> <%= current_company.email %></p>
-
-	
+<div  class="section_heading">
+<h1 class= "section-heading" style="color:brown;font-size:300%;font-family:'Contrail One',cursive;">My Dashboard</h1>
 
 
+<table id="dashboard_style">
+  <thead>
+    <tr>
+ <th class= "section-heading" style="color:black;font-size:100%;font-family:'Contrail One',cursive;">My Boat Fleet</th>
+
+ <% @boats.each do |boat| %>
+
+   <th><%= boat.name %></th>
+   <% end %>
+</tr>
+<tr>
+       <th class= "section-heading" style="color:black;font-size:100%;font-family:'Contrail One',cursive;">My Jobs</th>
+
+
+       	<% @jobs.each do |jobs| %>
+
+       		<th><%= jobs.id %></th>
+       		<th><%= jobs.status %></th>
+       		<% end %>
+</tr>
+<tr>
+       <th class= "section-heading" style="color:black;font-size:100%;font-family:'Contrail One',cursive;">My Profile</th>
+<th><%= current_company.email %></th>
+ <th colspan="3"></th>
+   </tr>
+ </thead>
 </div>
+ <tbody>
+</tbody>
+</table>
 
-<div class="dash_boats">
-	<p>Boats in Fleet</p>
-	<ul>
-	<% @boats.each do |boat| %>
+<%= link_to root_path do %>
 
-		<li><%= boat.name %></li>
-		<% end %>
-	</ul>
+<span class="fa-stack fa-4x" style="color:brown;">
+<i class="fa fa-anchor" aria-hidden="true"></i>
+<button id="newBoatbutton" class="btn btn-primary btn-xl text-uppercase" type="submit">Home</button>
 
+</span>
 
-
-</div>
-
-<div class="dash_jobs">
-<p>Jobs</p>
-
-	<% @jobs.each do |jobs| %>
-	<ul>
-		<li><%= jobs.id %></li>
-		<li><%= jobs.status %></li>
-		<% end %>
-	</ul>
-
-
-</div>
-
+<% end %>
