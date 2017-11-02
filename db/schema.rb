@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20171101154632) do
 
   create_table "boats", force: :cascade do |t|
     t.string "name"
-    t.integer "size"
+    t.string "size"
     t.integer "max_load"
     t.string "image_url"
     t.integer "assign_jobs"
