@@ -1,20 +1,26 @@
 <p id="notice"><%= notice %></p>
+<div class="section_heading">
+<h1 class= "section-heading" style="color:brown;font-size:300%;font-family:'Contrail One',cursive;">Boats</h1>
 
-<h1>Boats</h1>
-
-<table>
+<div class="section_heading">
+<table id="boat_style">
   <thead>
     <tr>
+
       <th>Name</th>
       <th>Size</th>
       <th>Max load</th>
       <th>Image url</th>
       <th>Assign jobs</th>
+
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
+</div>
+    </div>
+
     <% @boats.each do |boat| %>
       <tr>
         <td><%= boat.name %></td>
@@ -22,9 +28,13 @@
         <td><%= boat.max_load %></td>
         <td><%= image_tag boat.photo.url (:medium)%></td>
         <td><%= boat.assign_jobs %></td>
+
         <td><%= link_to 'Show', boat %></td>
+
         <td><%= link_to 'Edit', edit_boat_path(boat) %></td>
+
         <td><%= link_to 'Destroy', boat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +42,12 @@
 
 <br>
 
-<%= link_to 'New Boat', new_boat_path %>
+<%= link_to new_boat_path do %>
+
+        <span class="fa-stack fa-4x" style="color:brown;">
+        <i class="fa fa-anchor" aria-hidden="true"></i>
+  <button id="newBoatbutton" class="btn btn-primary btn-xl text-uppercase" type="submit">New Boat</button>
+
+        </span>
+
+        <% end %>
