@@ -60,3 +60,4 @@ gem 'devise'
 
 gem 'animate-rails'
 gem "paperclip", "~> 5.0.0"
+gem 'country_select' 

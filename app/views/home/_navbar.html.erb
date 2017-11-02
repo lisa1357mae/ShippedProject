@@ -1,10 +1,14 @@
 
 
 <ul>
-  <li><a class="active" href="/">HOME</a></li>
-  <li><a href="/boats">BOATS</a></li>
-  <li><a href="/customers">CUSTOMERS</a></li>
-  <li><a href="/companies">COMPANY</a></li>
-  <li><a href="/dashboard">DASHBOARD</a></li>
+	  <li><a class="active" href="/">HOME</a></li>
+	  <li><a href="/boats">BOATS</a></li>
+	  <li><a href="/customers">CUSTOMERS</a></li>
+	  <li><a href="/companies">COMPANY</a></li>
+	  <li><a href="/dashboard">DASHBOARD</a></li>
+	  <% if 
+	  !@current_company %>
+	  	<li><a href="/logout">LOGOUT</a></li>
+	  <% end %>
 </ul>
  
