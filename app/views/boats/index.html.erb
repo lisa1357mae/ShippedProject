@@ -20,7 +20,7 @@
         <td><%= boat.name %></td>
         <td><%= boat.size %></td>
         <td><%= boat.max_load %></td>
-        <td><%= boat.image_url %></td>
+        <td><%= image_tag boat.photo.url (:medium)%></td>
         <td><%= boat.assign_jobs %></td>
         <td><%= link_to 'Show', boat %></td>
         <td><%= link_to 'Edit', edit_boat_path(boat) %></td>
