@@ -10,7 +10,7 @@
       <th colspan="3"></th>
     </tr>
   </thead>
-
+<div class="form-group">
   <tbody>
     <% @boat_jobs.each do |boat_job| %>
       <tr>
@@ -20,6 +20,7 @@
         <td><%= link_to 'Edit', edit_boat_job_path(boat_job) %></td>
         <td><%= link_to 'Destroy', boat_job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
+    </div>
     <% end %>
   </tbody>
 </table>

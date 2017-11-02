@@ -53,3 +53,57 @@ li a.active {
    color: white;
    background-color: #4CAF50;
 }
+
+.boats_form {
+  font-size: 100px;
+  background-color: grey;
+  text-align: center;
+}
+
+.section_heading {
+  font-size: 30px;
+  background-color: lightblue;
+  border-style: solid;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+* {
+  font-family:'Contrail One',cursive;
+
+}
+
+
+.form-group{
+display: inline;
+padding-right: 600px;
+}
+
+
+//boat page table styles
+
+#boat_style {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#boat_style td, #boat_style th {
+    border: 1px solid blue;
+    padding: 8px;
+}
+
+#boat_style tr:nth-child(even){background-color: #f2f2f2;}
+
+#boat_style tr:hover {background-color: #ddd;}
+
+#boat_style th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: brown;
+    color: white;
+}
