@@ -1,7 +1,7 @@
 <h1>Dashboard</h1>
 
 <div  class="dash_account">
- <p> <% @current_user %>
+ <p> <%= current_company.email %></p>
 
 	
 
@@ -10,9 +10,10 @@
 
 <div class="dash_boats">
 	<p>Boats in Fleet</p>
-	<% @boats.each do |boat| %>
 	<ul>
-		<li><% boat.name %></li>
+	<% @boats.each do |boat| %>
+
+		<li><%= boat.name %></li>
 		<% end %>
 	</ul>
 
@@ -25,8 +26,8 @@
 
 	<% @jobs.each do |jobs| %>
 	<ul>
-		<li><% jobs.id %></li>
-		<li><% jobs.status %></li>
+		<li><%= jobs.id %></li>
+		<li><%= jobs.status %></li>
 		<% end %>
 	</ul>
 
