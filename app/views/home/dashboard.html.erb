@@ -35,12 +35,32 @@
 </tbody>
 </table>
 
-<%= link_to jobs_path do %>
+<%= link_to new_job_path do %>
 
 <span class="fa-stack fa-4x" style="color:brown;">
 <i class="fa fa-anchor" aria-hidden="true"></i>
-<button id="newBoatbutton" class="btn btn-primary btn-xl text-uppercase" type="submit">Jobs</button>
+<button id="newBoatbutton" class="btn btn-primary btn-xl text-uppercase" type="submit">New Boat Job</button>
 
 </span>
 
 <% end %>
+
+<%= link_to new_boat_path do %>
+
+        <span class="fa-stack fa-4x" style="color:brown;">
+        <i class="fa fa-anchor" aria-hidden="true"></i>
+  <button id="newBoatbutton" class="btn btn-primary btn-xl text-uppercase" type="submit">New Boat</button>
+
+        </span>
+
+        <% end %>
+
+        <%= link_to root_path do %>
+
+                <span class="fa-stack fa-4x" style="color:brown;">
+                <i class="fa fa-anchor" aria-hidden="true"></i>
+          <button id="newBoatbutton" class="btn btn-primary btn-xl text-uppercase" type="submit">Home</button>
+
+                </span>
+
+                <% end %>
