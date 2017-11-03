@@ -4,7 +4,7 @@ class Company < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-         validates :name , :uniqueness => true 
+         validates :username, :uniqueness => true 
 
 has_many :boats
 has_many :jobs
