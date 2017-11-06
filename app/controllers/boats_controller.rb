@@ -21,6 +21,8 @@ class BoatsController < ApplicationController
   def edit
   end
 
+
+
   # POST /boats
   # POST /boats.json
   def create
@@ -37,6 +39,7 @@ class BoatsController < ApplicationController
       end
     end
   end
+
 
   # PATCH/PUT /boats/1
   # PATCH/PUT /boats/1.json

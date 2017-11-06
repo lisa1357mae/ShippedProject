@@ -8,10 +8,13 @@ class HomeController < ApplicationController
   	@boats = Boat.all
   end
 def logout
-	 
+
 	session[:company_id] = nil
 	flash[:message] = "You are logged out !"
 	redirect_to :root
+
+
+
 end
 
   end
