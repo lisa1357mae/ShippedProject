@@ -12,7 +12,7 @@ Company.create! ([{ username: 'jborbon',email: 'jborbon@live.com', firstname:'Jo
     'Mae', password: 'test123'}
   ])
 
-Boat.create([{name: 'little tug tug', size: 'small', max_load: 30, photo: open('http://lorempixel.com/output/transport-q-c-640-480-5.jpg'), assign_jobs:3, company_id: 1},
+Boat.create([{name: 'little tug tug', size: 'small', max_load: 30, photo: open('http://www.ronmeinsler.com/cantina/wp-content/uploads/2009/10/sailboat-against-a-beautiful-sunset.jpg'), assign_jobs:3, company_id: 1},
 
   {name: 'perfect storm', size: 'large', max_load: 100, photo: nil, assign_jobs:5, company_id: 2},
 

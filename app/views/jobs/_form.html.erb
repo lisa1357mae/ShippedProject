@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= form.label :boat_id %>
-    <%= form.number_field :boat_id, id: :job_boat_id %>
+    <%= form.collection_select :boat_id, Boat.all, :id, :name %>
   </div>
 
   <div class="field">
@@ -43,13 +43,13 @@
 
   <div class="field">
     <%= form.label :origin %>
-    <%= form.country_select :origin %> 
+    <%= form.country_select :origin %>
 
   </div>
 
   <div class="field">
     <%= form.label :destination %>
-    <%= form.country_select :job_destination %> 
+    <%= form.country_select :job_destination %>
   </div>
 
   <div class="actions">

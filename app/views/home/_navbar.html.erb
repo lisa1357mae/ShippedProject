@@ -6,6 +6,7 @@
 	  	<li id="navRight_style"><%= link_to('logout', destroy_company_session_path, method: :delete) %></li>
 			<li id="navRight_style"><a href="#"><%= current_company.email %></a></li>
   		<li><a href="/dashboard">dashboard</a></li>
+			<li><a href="/boats">boats</a></li>
 	  <% else %>
 
 	  	<li id="navRight_style"><%= link_to "login", new_company_session_path %></li>
