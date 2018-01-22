@@ -16,14 +16,17 @@
 </p>
 
 <p>
-  <strong>Image url:</strong>
-  <%= @boat.image_url %>
+  <strong>Photo:</strong>
+  <%= image_tag @boat.photo.url (:medium)%>
 </p>
 
 <p>
-  <strong>Assign jobs:</strong>
+<h1><strong>Assign jobs:</strong></h1>
   <%= @boat.assign_jobs %>
-</p>
+<%= link_to 'Create Job for this Boat', new_job_path  %>
 
+<br>
+<br>
+<br>
 <%= link_to 'Edit', edit_boat_path(@boat) %> |
 <%= link_to 'Back', boats_path %>

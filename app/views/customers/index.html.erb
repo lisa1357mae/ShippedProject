@@ -1,8 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Customers</h1>
+<div class="section_heading">
+<h1 class= "section-heading" style="color:brown;font-size:300%;font-family:'Contrail One',cursive;">Customers</h1>
 
-<table>
+<table id="customer_style">
   <thead>
     <tr>
       <th>Firstname</th>
@@ -15,6 +16,7 @@
   </thead>
 
   <tbody>
+  </div>
     <% @customers.each do |customer| %>
       <tr>
         <td><%= customer.firstname %></td>
@@ -32,4 +34,12 @@
 
 <br>
 
-<%= link_to 'New Customer', new_customer_path %>
+<%= link_to new_customer_path do %>
+
+        <span class="fa-stack fa-4x" style="color:brown;">
+        <i class="fa fa-anchor" aria-hidden="true"></i>
+  <button id="newBoatbutton" class="btn btn-primary btn-xl text-uppercase" type="submit">New Customer</button>
+
+        </span>
+
+        <% end %>

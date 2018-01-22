@@ -21,10 +21,13 @@ class BoatsController < ApplicationController
   def edit
   end
 
+
+
   # POST /boats
   # POST /boats.json
   def create
     @boat = Boat.new(boat_params)
+    @boat.company_id = current_company.id
 
     respond_to do |format|
       if @boat.save
@@ -36,6 +39,7 @@ class BoatsController < ApplicationController
       end
     end
   end
+
 
   # PATCH/PUT /boats/1
   # PATCH/PUT /boats/1.json
@@ -69,6 +73,6 @@ class BoatsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def boat_params
-      params.require(:boat).permit(:name, :size, :max_load, :image_url, :assign_jobs)
+      params.require(:boat).permit(:name, :size, :max_load, :photo, :assign_jobs)
     end
 end

@@ -4,7 +4,7 @@ class CreateCompanies < ActiveRecord::Migration[5.1]
       t.string :username
       t.string :firstname
       t.string :lastname
-      t.string :password
+      # t.string :password
 
       t.timestamps
     end

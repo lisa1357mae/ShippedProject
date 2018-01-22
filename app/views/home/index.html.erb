@@ -1,26 +1,35 @@
 <!-- Header -->
 
 <!-- Services -->
-<section id="services">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading" style="color:brown;font-size:500%;font-family:'Contrail One',cursive;">Shipped</h2>
+
+<div class="section_heading">
+<section id="home_style">
+
+
+
+        <h2 class="section-heading" style="color:brown;font-size:300%;font-family:'Contrail One',cursive;">Shipped</h2>
 
         <img src="http://aaronchang.com/wp-content/uploads/images/products/p-19177-4120_Sailboats_1738_1000px_web.jpg" class="img-fluid" alt="Responsive image">
-        <h3 class="section-subheading text-muted">We will ship your stuff anywhere!</h3>
-
-
+        <h3 class="section-subheading text-muted" style="color:grey;font-size:200%;font-family:'Contrail One',cursive;">We will ship your stuff anywhere!</h3>
+pro
+<%= link_to new_company_path do %>
         <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Sign Up to Continue</button>
+<% end %>
 
+<% if company_signed_in? %>
+  <%= link_to destroy_company_session_path, method: :delete do %>
+          <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Logout</button>
+  <% end %>
+<% else %>
+  <%= link_to new_company_session_path do %>
+          <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Login</button>
+  <% end %>
+<% end %>
 
-        <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Login</button>
-
-
-      </div>
-    </div>
+  </div>
 
     <br></br>
+
     <div class="row text-center">
       <div class="col-md-4">
 
@@ -31,8 +40,8 @@
         </span>
 
 
-        <h4 class="service-heading">Boats</h4>
-        <p class="text-muted">view boats or create your own</p>
+        <h4 class="service-heading"style="color:black;font-size:300%;font-family:'Contrail One',cursive;">Boat Fleet</h4>
+        <p class="text-muted" style="color:grey;font-size:200%;font-family:'Contrail One',cursive;">view boats or create your own</p>
       </div>
       <div class="col-md-4">
 
@@ -44,8 +53,8 @@
         </span>
 
 
-        <h4 class="service-heading">Location</h4>
-        <p class="text-muted">pick a location to ship your cargo</p>
+        <h4 class="service-heading"style="color:black;font-size:300%;font-family:'Contrail One',cursive;">Locations</h4>
+        <p class="text-muted" style="color:grey;font-size:200%;font-family:'Contrail One',cursive;">pick a location to ship your cargo</p>
       </div>
       <div class="col-md-4">
 
@@ -55,8 +64,9 @@
 
         </span>
 
-        <h4 class="service-heading">Ship Sizes</h4>
-        <p class="text-muted">pick a boat size that fits your needs </p>
+        <h4 class="service-heading" style="color:black;font-size:300%;font-family:'Contrail One',cursive;">Boat Shipments</h4>
+        <p class="text-muted" style="color:grey;font-size:200%;font-family:'Contrail One',cursive;">pick a boat size that fits your needs </p>
       </div>
     </div>
   </div>
+</div>

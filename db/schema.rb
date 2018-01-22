@@ -23,7 +23,10 @@ ActiveRecord::Schema.define(version: 20171101154632) do
     t.string "name"
     t.string "size"
     t.integer "max_load"
-    t.string "image_url"
+    t.string "photo_file_name"
+    t.string "photo_content_type"
+    t.integer "photo_file_size"
+    t.datetime "photo_updated_at"
     t.integer "assign_jobs"
     t.integer "company_id"
     t.datetime "created_at", null: false
@@ -35,7 +38,6 @@ ActiveRecord::Schema.define(version: 20171101154632) do
     t.string "username"
     t.string "firstname"
     t.string "lastname"
-    t.string "password"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "email", default: "", null: false

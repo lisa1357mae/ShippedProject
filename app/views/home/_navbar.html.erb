@@ -1,8 +1,18 @@
 
-
+<p id="notice"><%= notice %></p>
 <ul>
-  <li><a class="active" href="/">HOME</a></li>
-  <li><a href="/boats">BOATS</a></li>
-  <li><a href="/customers">CUSTOMERS</a></li>
-  <li><a href="/companies">COMPANY</a></li>
-</ul>
+	  <li><a class="active" href="/">HOME</a></li>
+
+	   <% if company_signed_in? %>
+	  	<li id="navRight_style"><%= link_to('logout', destroy_company_session_path, method: :delete) %></li>
+			<li id="navRight_style"><a href="#"><%= current_company.email %></a></li>
+  		<li><a href="/dashboard">dashboard</a></li>
+			<li><a href="/boats">boats</a></li>
+	  <% else %>
+
+	  	<li id="navRight_style"><%= link_to "login", new_company_session_path %></li>
+     	<li id="navRight_style"><%= link_to"signup", new_company_registration_path %> </li>
+
+	  <% end %>
+  </ul>
+
