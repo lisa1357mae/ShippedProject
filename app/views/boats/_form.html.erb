@@ -19,11 +19,18 @@
 
   <div class="field">
     <%= form.label :size %>
+
     <%=form.select :size , options_for_select([
     ['Small (500 Max)'], ['Medium (1000 Max)'],['large(2000 Max)' ]] )%>
   </div>
 
 <!--
+
+    <%=form.select options_for_select([
+    ['Small', 1], ['Medium', 2],['large, 3 '] ] )%>
+  </div>
+
+
   <div class="field">
     <%= form.label :max_load %>
     <%= form.text_field :max_load, id: :boat_max_load %>
