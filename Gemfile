@@ -59,5 +59,5 @@ gem 'bootstrap-sass'
 gem 'devise'
 
 gem 'animate-rails'
-gem "paperclip", "~> 5.1.0"
+gem "paperclip", ">= 5.2.0"
 gem 'country_select'
